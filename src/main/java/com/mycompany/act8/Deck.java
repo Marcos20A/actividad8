@@ -39,12 +39,21 @@ public class Deck {
         return "Mezclando la baraja...";
     }
     
-    public void pick(Deck deck){
+    public void head(){
         
-      
+        
+        
+    }
+    
+    public Card pick(Deck deck){
         Random randomGenerator = new Random();
         int index = randomGenerator.nextInt(deck.getCard().size());
-        Card card = deck.getCard().get(index);
+        Card card20 = deck.getCard().get(index);
+        return card20;
+    }
+    
+    public void hand(){
+        
         
     }
 }
