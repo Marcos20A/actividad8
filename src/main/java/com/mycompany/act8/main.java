@@ -16,7 +16,7 @@ public class main {
     
     public static void main(String[] args) {
         
-        
+        int numm;
         String[] palo = {"Pica", "Corazon", "Diamante", "Trebol"};
         String[] valor = {"A", "2", "3", "4", "5", "6", "7", "8", "9", "10", "J", "Q", "K"};
         //Integer cont = 1;
@@ -57,6 +57,7 @@ public class main {
                  System.out.println("Selecciona una opcion: ");
                   opcion = sn.nextInt();
             
+                  
             
                switch(opcion){
                 
@@ -74,8 +75,13 @@ public class main {
                       deck.getCard().get(0).getPalo();
                       //System.out.println(card1);
                       System.out.println("La primera carta del deck es: " +" "+card1.getPalo()+" " + card1.getColor()+" " + card1.getValor());
-                      System.out.println("Quedan:  " + deck.numeros() + " en el deck");
+                      System.out.println("Quedan:  " + deck.numeros()  + " en el deck");
                       //System.out.println(deck.mezclar());
+                      if(deck.numeros() <= 0){
+                          
+                          System.out.println("Se han acabado las cartas ");
+                          
+                      }
                       
                     
                     break;
@@ -88,7 +94,10 @@ public class main {
                      System.out.println("La carta al azar es: " + card2.getPalo()+ " " + card2.getColor()+ " "+card2.getValor());
                      System.out.println("Quedan: "+ deck.numeros2() +" en el deck");
                      //System.out.println(deck.mezclar());
-                     
+                       if(deck.numeros2() <= 0){
+                          System.out.println("Se han acabado las cartas ");
+                          
+                      }
                     
                     break;
                     
@@ -123,7 +132,10 @@ public class main {
                          deck.getCard().get(5).getPalo();
                          System.out.println("La quinta carta es: " +" "+card7.getPalo()+" " + card7.getColor()+" " + card7.getValor());
                          System.out.println("Quedan: "+ deck.numeros3() + " en el deck");
-                         
+                         if(deck.numeros3() <= 0){
+                          System.out.println("Se han acabado las cartas ");
+                          
+                      }
                     
                       break;
                     
