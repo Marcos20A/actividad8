@@ -74,7 +74,7 @@ public class main {
                       deck.getCard().get(0).getPalo();
                       //System.out.println(card1);
                       System.out.println("La primera carta del deck es: " +" "+card1.getPalo()+" " + card1.getColor()+" " + card1.getValor());
-                      System.out.println("Quedan:  51 cartas en deck");
+                      System.out.println("Quedan:  " + deck.numeros() + " en el deck");
                       //System.out.println(deck.mezclar());
                       
                     
@@ -86,7 +86,7 @@ public class main {
                      card2.getColor();
                      card2.getPalo();
                      System.out.println("La carta al azar es: " + card2.getPalo()+ " " + card2.getColor()+ " "+card2.getValor());
-                     System.out.println("Quedan: 51 cartas en deck");
+                     System.out.println("Quedan: "+ deck.numeros2() +" en el deck");
                      //System.out.println(deck.mezclar());
                      
                     
@@ -122,7 +122,7 @@ public class main {
                          card7.getPalo();
                          deck.getCard().get(5).getPalo();
                          System.out.println("La quinta carta es: " +" "+card7.getPalo()+" " + card7.getColor()+" " + card7.getValor());
-                         System.out.println("Quedan: 47 cartas en deck");
+                         System.out.println("Quedan: "+ deck.numeros3() + " en el deck");
                          
                     
                       break;

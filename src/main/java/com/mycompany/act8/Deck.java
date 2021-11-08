@@ -56,4 +56,22 @@ public class Deck {
         
         
     }
+    
+   public Integer numeros(){
+        
+       Integer numrest = (numCard - 1);
+        return numrest;
+    }
+   
+   public Integer numeros2(){
+       
+       Integer numrestt = (numCard - 1);
+       return numrestt;
+   }
+   
+   public Integer numeros3(){
+       
+       Integer numerostt = (numCard - 5);
+       return numerostt;
+   }
 }
